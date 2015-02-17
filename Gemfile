@@ -43,3 +43,9 @@ group :development, :test do
   gem 'spring'
 end
 
+#Gemas iniciales
+gem 'quiet_assets', group: :development
+gem 'email_validator'
+
+
+

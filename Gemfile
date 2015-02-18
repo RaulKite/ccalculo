@@ -63,3 +63,4 @@ end
 
 gem 'factory_girl'
 
+gem 'high_voltage'

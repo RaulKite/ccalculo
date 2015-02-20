@@ -4,7 +4,7 @@ lock '3.3.5'
 set :application, 'ccalculo'
 set :repo_url, 'https://github.com/RaulKite/ccalculo.git'
 
-set :linked_files, %w{config/database.yml config/initializers/devise.rb}
+set :linked_files, %w{config/database.yml config/initializers/devise.rb config/secrets.yml}
 
 
 # Default value for :pty is false

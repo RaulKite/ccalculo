@@ -1,4 +1,4 @@
 daemonize
-pidfile 'tmp/pids/puma.pid'
+pidfile '/tmp/puma.pid'
 bind 'unix:///tmp/ccalculo.sock'
 preload_app!

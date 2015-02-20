@@ -72,4 +72,10 @@ group :test do
   gem 'shoulda-matchers', require: false
 end
 
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+end
 
+gem 'puma'

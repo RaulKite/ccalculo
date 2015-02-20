@@ -5,6 +5,8 @@
 # files.
 
 require 'cucumber/rails'
+require 'factory_girl'
+
 
 # Capybara defaults to CSS3 selectors rather than XPath.
 # If you'd prefer to use XPath, just uncomment this line and adjust any
@@ -56,3 +58,12 @@ end
 # See https://github.com/cucumber/cucumber-rails/blob/master/features/choose_javascript_database_strategy.feature
 Cucumber::Rails::Database.javascript_strategy = :truncation
 
+
+
+#Warden Helpers
+include Warden::Test::Helpers
+Warden.test_mode!
+
+After do
+  Warden.test_reset!
+end

@@ -61,6 +61,15 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
-gem 'factory_girl'
+gem 'factory_girl_rails'
 
 gem 'high_voltage'
+
+gem 'devise'
+gem 'devise_cas_authenticatable'
+
+group :test do
+  gem 'shoulda-matchers', require: false
+end
+
+

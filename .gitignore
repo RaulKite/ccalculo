@@ -16,6 +16,8 @@
 !/log/.keep
 /tmp
 
+# Sensitive data
 config/database.yml
+config/initializers/devise.rb
 
 .DS_Store

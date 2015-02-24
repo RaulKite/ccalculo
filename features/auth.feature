@@ -12,5 +12,11 @@ Feature: Authentication
     And I visit dashboard page
     Then  I can see dashboard page
 
+  Scenario: I Can't see Dashboard after logout
+    When I am authenticated
+    And I visit dashboard page
+    And I click logout link
+    Then I should be redirected to sso login page
+
 
 

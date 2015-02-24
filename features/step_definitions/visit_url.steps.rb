@@ -10,7 +10,7 @@ When(/^I visit dashboard page$/) do
 end
 
 Then(/^I should be redirected to sso login page$/) do
-  expect(@route_exception.to_s).to include("login")
+  expect(@route_exception.to_s).to include("\/cas\/")
 end
 
 Then(/^I can see dashboard page$/) do

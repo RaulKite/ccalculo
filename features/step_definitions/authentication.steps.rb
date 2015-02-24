@@ -9,4 +9,9 @@ When(/^I am authenticated$/) do
   login_as(pepito, :scope => "user")
 end
 
-
+When(/^I click logout link$/) do
+  begin 
+    click_on 'Salir'
+  rescue ActionController::RoutingError  => @route_exception
+  end
+end
